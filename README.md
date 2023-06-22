@@ -1,22 +1,22 @@
-#hate-speech-detection
-This project aims to detect hate speech and, if possible, take action to ban or terminate users who engage in such behavior. It utilizes data science and machine learning techniques to analyze and classify text data.
+# Hate Speech Detection
 
-Project Description
-The primary goal of this project is to develop a hate speech detection system using data science and machine learning methodologies. The system processes textual data by applying various techniques, such as removing stop words and utilizing the Natural Language Toolkit (NLTK) to bring words into their base forms. By eliminating unnecessary words and standardizing the text, the algorithm can focus more on the underlying meaning of the words rather than grammatical variations.
+A project to detect hate speech and, if possible, ban/terminate the users.
 
-The project involves loading the processed data into the code and performing further transformations on the sentences to extract the most relevant information. This process includes removing unnecessary links, punctuation, and other non-essential elements. Subsequently, a machine learning algorithm is employed to divide the data into training and testing sets. The training dataset is used to train the model, while the test dataset assesses the accuracy of the trained model.
+## Project Description
 
-Currently, the model achieves a test accuracy of 87.59%, which is a promising start for this project.
+This is a project based on data science and machine learning where the data is first cleared using toolkits such as stop words and NLTK (Natural Language Toolkit), which brings all the words into their natural forms. For example, "driving" will be transformed to "drive," and stop words such as "a," "an," and "the" are removed. This helps the algorithm focus more on the words rather than grammar.
 
-Features
-Hate speech detection: The project detects hate speech in text data, enabling identification of potentially harmful content.
+Then the data is loaded into the code, and through a series of changes, the sentences are further processed, removing unnecessary links, punctuation, and other elements. After this, the machine learning algorithm divides the data into test and train sets. The training set is used to train the model, and the test dataset is used to evaluate its performance.
+
+On testing, the model achieves a test accuracy of 87.59%, which is a promising start for this project.
+
+## Features
+
+Hate speech detection: The project detects hate speech in text data, enabling the identification of potentially harmful content.
 User ban/termination: If feasible, the project aims to take action against users who engage in hate speech, such as banning or terminating their accounts.
-Installation
-To run this project locally, follow these steps:
 
-Clone the repository: git clone https://github.com/your-username/hate-speech.git
-Install the required dependencies: pip install -r requirements.txt
-Usage
+## Usage
+
 Prepare your dataset: Ensure your dataset is properly formatted and contains labeled examples of hate speech.
 Preprocess the data: Use the provided preprocessing script to clean and transform the text data.
 Train the model: Execute the training script to train the machine learning model using the preprocessed data.
@@ -24,12 +24,12 @@ Test the model: Run the testing script to evaluate the model's accuracy on a sep
 Interpret the results: Analyze the model's performance and explore opportunities for improvement.
 Please refer to the documentation and code comments for more detailed instructions and usage examples.
 
-Contributing
+## Contributing
+
 Contributions to this project are welcome. If you encounter any issues, have suggestions for improvements, or would like to contribute new features, please follow the guidelines in the CONTRIBUTING.md file.
 
-License
-This project is licensed under the MIT License. You are free to use, modify, and distribute the code in accordance with the terms of the license.
 
-Contact
-For further information or inquiries, please contact [your-name] at [your-email-address]. Feel free to reach out with any questions, feedback, or collaboration opportunities.
 
+## Contact
+
+For further information or inquiries, please contact Sai Saketh Motamarry at saketh1573@gmail.com . Feel free to reach out with any questions, feedback, or collaboration opportunities.
