@@ -24,11 +24,6 @@ Test the model: Run the testing script to evaluate the model's accuracy on a sep
 Interpret the results: Analyze the model's performance and explore opportunities for improvement.
 Please refer to the documentation and code comments for more detailed instructions and usage examples.
 
-## Contributing
-
-Contributions to this project are welcome. If you encounter any issues, have suggestions for improvements, or would like to contribute new features, please follow the guidelines in the CONTRIBUTING.md file.
-
-
 
 ## Contact
 
