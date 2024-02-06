@@ -1,30 +1,51 @@
 # Hate Speech Detection
 
-A project to detect hate speech and, if possible, ban/terminate the users.
+This repository contains code for building a Hate Speech Detection model using a labeled dataset. The goal is to classify text data into categories such as "Hate Speech," "Offensive Language," or "Neither" using machine learning algorithms.
 
-## Project Description
+## Dataset
+The dataset used in this project is loaded from the file labeled_data.csv. The data consists of text samples labeled with classes: 0 for "Hate Speech," 1 for "Offensive Language," and 2 for "Neither."
 
-This is a project based on data science and machine learning where the data is first cleared using toolkits such as stop words and NLTK (Natural Language Toolkit), which brings all the words into their natural forms. For example, "driving" will be transformed to "drive," and stop words such as "a," "an," and "the" are removed. This helps the algorithm focus more on the words rather than grammar.
+## Libraries Used
+The project utilizes the following Python libraries:
 
-Then the data is loaded into the code, and through a series of changes, the sentences are further processed, removing unnecessary links, punctuation, and other elements. After this, the machine learning algorithm divides the data into test and train sets. The training set is used to train the model, and the test dataset is used to evaluate its performance.
+- `pandas` and `numpy` for data manipulation and analysis.
+- `nltk` for natural language processing tasks, including text cleaning and stemming.
+- `scikit-learn` for machine learning algorithms and evaluation metrics.
+- `seaborn` and `matplotlib` for data visualization.
 
-On testing, the model achieves a test accuracy of 87.59%, which is a promising start for this project.
+## Project Steps
+### 1. Data Exploration:
+- Descriptive statistics of the dataset.
+- Mapping label values to numerical values (0 for "Hate Speech," 1 for "Offensive Language," and 2 for "Neither").
+- Balancing the dataset by creating a new "labels" column.
 
-## Features
+### 2. Text Preprocessing:
+- Removing special characters, numbers, and website links from the text.
+- Converting text to lowercase.
+- Removing stopwords (common words with little significance).
+- Stemming words to their base or root form.
 
-Hate speech detection: The project detects hate speech in text data, enabling the identification of potentially harmful content.
-User ban/termination: If feasible, the project aims to take action against users who engage in hate speech, such as banning or terminating their accounts.
+### 3. Feature Extraction:
+- Using the Bag-of-Words approach with CountVectorizer to convert text data into numerical feature vectors.
+
+### 4. Model Building and Evaluation:
+- Splitting the dataset into training and testing sets.
+- Training a Decision Tree model for Hate Speech Detection.
+- Evaluating the model's performance using confusion matrix, heatmap, and accuracy score.
+- Providing a sample example to demonstrate how to use the model for predictions.
+
+## Technical Information
+- The code is implemented in Python 3.7+ using Jupyter Notebook.
+- Machine learning models are built using the scikit-learn library.
+- Natural language processing tasks leverage the Natural Language Toolkit (nltk).
+- Text data is converted into numerical feature vectors using CountVectorizer.
 
 ## Usage
+Follow the steps outlined in the Jupyter Notebook to preprocess the data, extract features, and train the Hate Speech Detection model. Modify the code as needed to suit your requirements.
 
-Prepare your dataset: Ensure your dataset is properly formatted and contains labeled examples of hate speech.
-Preprocess the data: Use the provided preprocessing script to clean and transform the text data.
-Train the model: Execute the training script to train the machine learning model using the preprocessed data.
-Test the model: Run the testing script to evaluate the model's accuracy on a separate test dataset.
-Interpret the results: Analyze the model's performance and explore opportunities for improvement.
-Please refer to the documentation and code comments for more detailed instructions and usage examples.
+## Conclusion
+By building and evaluating the Hate Speech Detection model, you can effectively categorize text into different classes, aiding in the identification of potentially harmful content. The results and insights gained from this project can be applied to various applications, such as content moderation and online safety.
 
-
-## Contact
-
-For further information or inquiries, please contact Sai Saketh Motamarry at saketh1573@gmail.com . Feel free to reach out with any questions, feedback, or collaboration opportunities.
+## Credits
+The labeled dataset used in this project was obtained from [source].
+The code in this repository was written by [Your Name].
