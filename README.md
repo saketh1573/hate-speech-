@@ -47,5 +47,5 @@ Follow the steps outlined in the Jupyter Notebook to preprocess the data, extrac
 By building and evaluating the Hate Speech Detection model, you can effectively categorize text into different classes, aiding in the identification of potentially harmful content. The results and insights gained from this project can be applied to various applications, such as content moderation and online safety.
 
 ## Credits
-The labeled dataset used in this project was obtained from [source].
-The code in this repository was written by [Your Name].
+- The labeled dataset used in this project was obtained from [kaggle](https://www.kaggle.com/datasets).
+- The code in this repository was written by Sai Saketh Motamarry.
